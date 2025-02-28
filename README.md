@@ -14,13 +14,13 @@ A lightweight, type-safe event emitter for TypeScript projects.
 
 ```bash
 # Using npm
-npm install github:mabdullahadeel/typesafe-emitter
+npm install safe-dispatcher
 
 # Using yarn
-yarn add github:mabdullahadeel/typesafe-emitter
+yarn add safe-dispatcher
 
 # Using pnpm
-pnpm add github:mabdullahadeel/typesafe-emitter
+pnpm add safe-dispatcher
 ```
 
 ## Usage

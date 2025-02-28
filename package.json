@@ -1,6 +1,6 @@
 {
   "name": "typesafe-emitter",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "src/index.ts",
   "scripts": {
     "start": "bun src/index.ts",

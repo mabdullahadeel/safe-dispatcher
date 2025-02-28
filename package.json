@@ -1,14 +1,25 @@
 {
   "name": "typesafe-emitter",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "main": "src/index.ts",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "start": "bun src/index.ts",
-    "build": "bun build src/index.ts -o dist/index.js",
-    "test": "bun test"
+    "build": "bun run clean && bun run build:js && bun run build:types",
+    "build:js": "bun build src/index.ts --outdir dist",
+    "build:types": "tsc --emitDeclarationOnly --declaration --outDir dist",
+    "clean": "rm -rf dist",
+    "version": "changeset version",
+    "test": "bun test",
+    "publish": "bun run build && changeset publish"
   },
   "dependencies": {},
   "devDependencies": {
+    "@changesets/cli": "^2.28.1",
     "bun-types": "^1.2.4",
     "typescript": "^5.6.3"
   },

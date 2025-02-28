@@ -15,7 +15,7 @@
     "clean": "rm -rf dist",
     "version": "changeset version",
     "test": "bun test",
-    "publish": "bun run build && changeset publish"
+    "release": "bun run build && changeset publish"
   },
   "dependencies": {},
   "devDependencies": {

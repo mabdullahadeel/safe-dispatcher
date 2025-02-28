@@ -1,5 +1,5 @@
 {
-  "name": "typesafe-emitter",
+  "name": "typesafe-dispatcher",
   "version": "0.0.0",
   "main": "src/index.ts",
   "types": "dist/index.d.ts",
